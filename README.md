@@ -6,4 +6,4 @@
 
 ##chap2 quiz in chap2.txt
 
-##chap3 quiz in chap3.txt
+##chap3 quiz in chap3.c
