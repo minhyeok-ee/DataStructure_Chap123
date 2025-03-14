@@ -28,6 +28,8 @@
 
 # 4. flow chart 그리기 : 자연수 n ( > 0) 이 주어졌을 때, 소수인지 판단하는 알고리즘의 flow chart를 그리세요
 
+![자연수 num 입력 후 소수 판별 과정](image/chap1_4.jpg)
+
 
 # 5. Abstract data type 정의를 정의하고 비유를 들어 설명하세요
 
