@@ -79,8 +79,8 @@ int main()
 }
 #endif
 
-// 다항식의 0이 아닌 항만을 배열에 저장하는 방법법
-#if 1
+// 다항식의 0이 아닌 항만을 배열에 저장하는 방법
+#if 0
 #include <stdio.h>
 
 #define MAX_TERMS 10 // 최대 항의 개수
