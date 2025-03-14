@@ -98,37 +98,40 @@ int fib_iter(int n) {
 
 # 6. Recursion을 이용한 하노이탑 알고리즘으로 plate 4개를 옮기는 과정을, 함수 호출과 반환 과정이 보이도록 그림으로 작성하세요
 
+- 트리 형태로 나타내면 호출과 반환을 명확하게 알 수 있다.
+
 ```
 hanoi(4, A, C, B)
 ├── hanoi(3, A, B, C)
 │    ├── hanoi(2, A, C, B)
-│    │    ├── hanoi(1, A, B, C)
-│    │    │    ├── Move A → B
+│    │    ├── hanoi(1, A, B, C)    -> 호출
+│    │    │    ├── Move A → B    -> 반환
 │    │    ├── Move A → C
-│    │    ├── hanoi(1, B, C, A)
-│    │         ├── Move B → C
+│    │    ├── hanoi(1, B, C, A)    -> 호출
+│    │         ├── Move B → C    -> 반환
 │    ├── Move A → B
-│    ├── hanoi(2, C, B, A)
+│    ├── hanoi(2, C, B, A)    -> 호출
 │    │    ├── hanoi(1, C, A, B)
-│    │    │    ├── Move C → A
+│    │    │    ├── Move C → A    -> 반환
 │    │    ├── Move C → B
 │    │    ├── hanoi(1, A, B, C)
-│    │         ├── Move A → B
+│    │         ├── Move A → B    -> 반환
 ├── Move A → C
-├── hanoi(3, B, C, A)
+├── hanoi(3, B, C, A)    -> 호출
 │    ├── hanoi(2, B, A, C)
 │    │    ├── hanoi(1, B, C, A)
-│    │    │    ├── Move B → C
+│    │    │    ├── Move B → C    -> 반환
 │    │    ├── Move B → A
 │    │    ├── hanoi(1, C, A, B)
-│    │         ├── Move C → A
+│    │         ├── Move C → A    -> 반환
 │    ├── Move B → C
-│    ├── hanoi(2, A, C, B)
+│    ├── hanoi(2, A, C, B)    -> 호출
 │    │    ├── hanoi(1, A, B, C)
-│    │    │    ├── Move A → B
+│    │    │    ├── Move A → B    -> 반환
 │    │    ├── Move A → C
 │    │    ├── hanoi(1, B, C, A)
-│    │         ├── Move B → C
+│    │         ├── Move B → C    -> 반환
+
 ```
 
 
