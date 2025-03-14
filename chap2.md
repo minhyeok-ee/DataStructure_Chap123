@@ -98,6 +98,7 @@ int fib_iter(int n) {
 
 # 6. Recursion을 이용한 하노이탑 알고리즘으로 plate 4개를 옮기는 과정을, 함수 호출과 반환 과정이 보이도록 그림으로 작성하세요
 
+```
 hanoi(4, A, C, B)
 ├── hanoi(3, A, B, C)
 │    ├── hanoi(2, A, C, B)
@@ -128,7 +129,7 @@ hanoi(4, A, C, B)
 │    │    ├── Move A → C
 │    │    ├── hanoi(1, B, C, A)
 │    │         ├── Move B → C
-
+```
 
 
 # 7. 하노이탑 알고리즘으로 100개 원판을 옮길 때 걸리는 시간을 계산하시오. 원판을 1번 옮기는 시간을 1 nano-second로 가정한다.
